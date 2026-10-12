@@ -1,0 +1,27 @@
+/* FM Barbershop official logo sizing and contrast */
+.fm-logo-header {
+    display: block;
+    width: 130px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+.fm-logo-footer {
+    display: block;
+    width: 112px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+.fm-logo-loader {
+    display: inline-block;
+    width: 55px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    filter: invert(1);
+}
+@media (max-width: 575px) {
+    .fm-logo-header { width: 115px; }
+    .fm-logo-footer { width: 105px; }
+}

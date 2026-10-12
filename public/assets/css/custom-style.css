@@ -1,0 +1,11 @@
+/* Shared assets for FM Barbershop Laravel project.
+   Guest and Admin styles are intentionally isolated in assets-guest/ and assets-admin/.
+   Keep only shared helpers here to avoid cross-theme conflicts. */
+@font-face {
+    font-family: 'OswaldLocal';
+    src: url('../fonts/Oswald.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+.font-oswald { font-family: 'OswaldLocal', sans-serif; }
