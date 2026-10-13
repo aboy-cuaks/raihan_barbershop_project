@@ -101,7 +101,7 @@
                                 <div class="hero__caption">
                                     <span data-animation="fadeInUp" data-delay="0.2s">Ditangani oleh barber
                                         profesional</span>
-                                    <h1 data-animation="fadeInUp" data-delay="0.5s">Tampil maksimal tingkat percaya
+                                    <h1 data-animation="fadeInUp" data-delay="0.5s">Tampil maksimal, naikkan percaya
                                         dirimu</h1>
                                 </div>
                             </div>
@@ -116,7 +116,7 @@
                                 <div class="hero__caption">
                                     <span data-animation="fadeInUp" data-delay="0.2s">Ditangani oleh barber
                                         profesional</span>
-                                    <h1 data-animation="fadeInUp" data-delay="0.5s">Tampil maksimal tingkat percaya
+                                    <h1 data-animation="fadeInUp" data-delay="0.5s">Tampil maksimal, naikkan percaya
                                         dirimu</h1>
                                 </div>
                             </div>
