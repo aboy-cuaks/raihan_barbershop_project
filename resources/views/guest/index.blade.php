@@ -99,8 +99,10 @@
                         <div class="row">
                             <div class="col-xl-8 col-lg-9 col-md-11 col-sm-10">
                                 <div class="hero__caption">
-                                    <span data-animation="fadeInUp" data-delay="0.2s">Ditangani oleh barber profesional</span>
-                                    <h1 data-animation="fadeInUp" data-delay="0.5s">Tampil maksimal tingkat percaya dirimu</h1>
+                                    <span data-animation="fadeInUp" data-delay="0.2s">Ditangani oleh barber
+                                        profesional</span>
+                                    <h1 data-animation="fadeInUp" data-delay="0.5s">Tampil maksimal tingkat percaya
+                                        dirimu</h1>
                                 </div>
                             </div>
                         </div>
@@ -112,8 +114,10 @@
                         <div class="row">
                             <div class="col-xl-8 col-lg-9 col-md-11 col-sm-10">
                                 <div class="hero__caption">
-                                    <span data-animation="fadeInUp" data-delay="0.2s">Ditangani oleh barber profesional</span>
-                                    <h1 data-animation="fadeInUp" data-delay="0.5s">Tampil maksimal tingkat percaya dirimu</h1>
+                                    <span data-animation="fadeInUp" data-delay="0.2s">Ditangani oleh barber
+                                        profesional</span>
+                                    <h1 data-animation="fadeInUp" data-delay="0.5s">Tampil maksimal tingkat percaya
+                                        dirimu</h1>
                                 </div>
                             </div>
                         </div>
@@ -149,15 +153,17 @@
                             <!-- Section Tittle -->
                             <div class="section-tittle section-tittle3 mb-35">
                                 <span>Cerita Singkat Owner</span>
-                                <h2>A Better Look Starts with a Great Cut</h2>
+                                <h2>Barbershop terpercaya di Rumbai sejak 2014</h2>
                             </div>
-                            <p class="mb-30 pera-bottom">Brook presents your services with flexible, convenient and
-                                cdpoe layouts. You can select your favorite layouts & elements for cular ts with
-                                unlimited ustomization possibilities. Pixel-perfreplication of the designers is
-                                intended.</p>
-                            <p class="pera-top mb-50">Brook presents your services with flexible, convefnient and ent
-                                anipurpose layouts. You can select your favorite.</p>
-                            <img src="{{ asset('assets-guest/img/gallery/signature.png') }}" alt="">
+                            <p class="mb-30 pera-bottom">Perjalanan saya di dunia barber dimulai pada tahun 2012, saat
+                                belajar mencukur dari seorang barber senior. Berawal dari membantu di tempat cukur
+                                kecil, saya terus mengasah keterampilan dan belajar memahami kebutuhan pelanggan.
+                                Pengalaman ini mengajarkan saya bahwa kualitas, ketekunan, dan kepercayaan adalah kunci
+                                dalam membangun usaha.</p>
+                            <p class="pera-top mb-50">Hingga kini, saya terus menjaga komitmen tersebut agar FM
+                                Barbershop menjadi tempat cukur terpercaya di Rumbai.</p>
+                            <img src="{{ asset('assets-guest/img/gallery/ttd-raihan.png') }}" width="150"
+                                height="100" alt="Tanda Tangan Raihan">
                         </div>
                     </div>
                 </div>
@@ -299,7 +305,8 @@
                                 <div class="pricing-list">
                                     <ul>
                                         <li>Styling. . . . . . . . . . . . . . . . . . . . . . . . . . . .
-                                            <span>$25</span></li>
+                                            <span>$25</span>
+                                        </li>
                                         <li>Styling + Color. . . . . . . . . . . . . . . . . . . <span>$65</span></li>
                                         <li>Styling + Tint. . . . . . . . . . . . . . . . . . . . . .<span>$65</span>
                                         </li>
