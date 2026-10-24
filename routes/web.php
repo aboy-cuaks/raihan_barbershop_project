@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\QuestionController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 // Guest/customer template: homepage is always available at "/".
@@ -27,5 +28,6 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('pelanggan', PelangganController::class);
     Route::resource('layanan', LayananController::class);
     Route::resource('barber', BarberController::class);
+    Route::resource('user', UserController::class)->except(['show']);
     Route::get('/pertanyaan', [QuestionController::class, 'index'])->name('pertanyaan.index');
 });
