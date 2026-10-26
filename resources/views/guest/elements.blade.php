@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets-guest/img/favicon.ico') }}">
 
- 	<!-- CSS here -->
+<!-- CSS here -->
 	<link rel="stylesheet" href="{{ asset('assets-guest/css/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets-guest/css/owl.carousel.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets-guest/css/slicknav.css') }}">
@@ -71,7 +71,7 @@
                                     <a href="{{ route('guest.contact') }}" class="btn header-btn">Book an Appointment</a>
                                 </div>
                             </div>
-                        </div>   
+                        </div>
                         <!-- Mobile Menu -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
@@ -120,7 +120,7 @@
 					helpful option to ensure a professional end result, but to help with your DVD replication project, here
 					are 4 easy
 					steps to follow for good DVD replication results:
-	
+
 				</p>
 			</div>
 		</section>
@@ -598,7 +598,7 @@
 										</select>
 									</div>
 								</div>
-	
+
 								<div class="mt-10">
 									<textarea class="single-textarea" placeholder="Message" onfocus="this.placeholder = ''"
 										onblur="this.placeholder = 'Message'" required></textarea>
@@ -861,21 +861,21 @@
 	<script src="{{ asset('assets-guest/js/wow.min.js') }}"></script>
 	<script src="{{ asset('assets-guest/js/animated.headline.js') }}"></script>
 	<script src="{{ asset('assets-guest/js/jquery.magnific-popup.js') }}"></script>
-	
+
 	<!-- Nice-select, sticky -->
 	<script src="{{ asset('assets-guest/js/jquery.nice-select.min.js') }}"></script>
 	<script src="{{ asset('assets-guest/js/jquery.sticky.js') }}"></script>
-	
+
 	<!-- contact js -->
 	<script src="{{ asset('assets-guest/js/contact.js') }}"></script>
 	<script src="{{ asset('assets-guest/js/jquery.form.js') }}"></script>
 	<script src="{{ asset('assets-guest/js/jquery.validate.min.js') }}"></script>
 	<script src="{{ asset('assets-guest/js/mail-script.js') }}"></script>
 	<script src="{{ asset('assets-guest/js/jquery.ajaxchimp.min.js') }}"></script>
-	
-	<!-- Jquery Plugins, main Jquery -->	
+
+	<!-- Jquery Plugins, main Jquery -->
 	<script src="{{ asset('assets-guest/js/plugins.js') }}"></script>
 	<script src="{{ asset('assets-guest/js/main.js') }}"></script>
-		
+
 	</body>
 </html>

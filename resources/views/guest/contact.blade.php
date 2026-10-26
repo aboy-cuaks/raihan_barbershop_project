@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets-guest/img/favicon.ico') }}">
 
-   <!-- CSS here -->
+    <!-- CSS here -->
     <link rel="stylesheet" href="{{ asset('assets-guest/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets-guest/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets-guest/css/slicknav.css') }}">
@@ -71,7 +71,7 @@
                                     <a href="{{ route('guest.contact') }}" class="btn header-btn">Book an Appointment</a>
                                 </div>
                             </div>
-                        </div>   
+                        </div>
                         <!-- Mobile Menu -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
@@ -139,7 +139,7 @@
                     </script>
                     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
                     </script>
-    
+
                 </div>
                 <div class="row">
                     <div class="col-12">
@@ -323,7 +323,7 @@
     <!-- One Page, Animated-HeadLin -->
     <script src="{{ asset('assets-guest/js/wow.min.js') }}"></script>
     <script src="{{ asset('assets-guest/js/animated.headline.js') }}"></script>
-    
+
     <!-- Nice-select, sticky -->
     <script src="{{ asset('assets-guest/js/jquery.nice-select.min.js') }}"></script>
     <script src="{{ asset('assets-guest/js/jquery.sticky.js') }}"></script>
@@ -335,8 +335,8 @@
     <script src="{{ asset('assets-guest/js/jquery.validate.min.js') }}"></script>
     <script src="{{ asset('assets-guest/js/mail-script.js') }}"></script>
     <script src="{{ asset('assets-guest/js/jquery.ajaxchimp.min.js') }}"></script>
-    
-    <!-- Jquery Plugins, main Jquery -->	
+
+    <!-- Jquery Plugins, main Jquery -->
     <script src="{{ asset('assets-guest/js/plugins.js') }}"></script>
     <script src="{{ asset('assets-guest/js/main.js') }}"></script>
 
