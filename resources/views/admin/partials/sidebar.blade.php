@@ -19,6 +19,11 @@
                 href="{{ route('admin.pelanggan.index') }}"><span class="nav-icon">♙</span><span>Pelanggan</span></a>
             <a class="nav-item {{ request()->routeIs('admin.layanan.*') ? 'active' : '' }}"
                 href="{{ route('admin.layanan.index') }}"><span class="nav-icon">✂</span><span>Layanan</span></a>
+            <a class="nav-item {{ request()->routeIs('admin.kategori-layanan.*') ? 'active' : '' }}"
+                href="{{ route('admin.kategori-layanan.index') }}">
+                <span class="nav-icon">▤</span>
+                <span>Kategori Layanan</span>
+            </a>
             <a class="nav-item {{ request()->routeIs('admin.barber.*') ? 'active' : '' }}"
                 href="{{ route('admin.barber.index') }}"><span class="nav-icon">♟</span><span>Barber</span></a>
             <a class="nav-item {{ request()->routeIs('admin.user.*') ? 'active' : '' }}"

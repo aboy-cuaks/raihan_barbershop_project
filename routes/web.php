@@ -1,4 +1,3 @@
-
 <?php
 
 use App\Http\Controllers\BarberController;
@@ -9,6 +8,7 @@ use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\KategoriLayananController;
 use Illuminate\Support\Facades\Route;
 
 // GUEST: Home
@@ -62,6 +62,8 @@ Route::redirect('/dashboard', '/admin')
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('pelanggan', PelangganController::class);
     Route::resource('layanan', LayananController::class);
+    Route::resource('kategori-layanan', KategoriLayananController::class)
+        ->except(['show']);
     Route::resource('barber', BarberController::class);
     Route::resource('user', UserController::class)
         ->except(['show']);
