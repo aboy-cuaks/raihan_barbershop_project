@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -8,22 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets-guest/img/favicon.ico') }}">
 
-	<!-- CSS here -->
-	<link rel="stylesheet" href="{{ asset('assets-guest/css/bootstrap.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets-guest/css/owl.carousel.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets-guest/css/slicknav.css') }}">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{ asset('assets-guest/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-guest/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-guest/css/slicknav.css') }}">
     <link rel="stylesheet" href="{{ asset('assets-guest/css/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('assets-guest/css/gijgo.css') }}">
     <link rel="stylesheet" href="{{ asset('assets-guest/css/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets-guest/css/animated-headline.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets-guest/css/magnific-popup.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets-guest/css/fontawesome-all.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets-guest/css/themify-icons.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets-guest/css/slick.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets-guest/css/nice-select.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets-guest/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-guest/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-guest/css/fontawesome-all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-guest/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-guest/css/slick.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-guest/css/nice-select.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-guest/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets-guest/css/branding.css') }}">
 </head>
+
 <body>
     <!-- ? Preloader Start -->
     <div id="preloader-active">
@@ -31,7 +33,8 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img class="fm-logo-loader" src="{{ asset('assets-guest/img/logo/loder.png') }}" alt="FM Barbershop">
+                    <img class="fm-logo-loader" src="{{ asset('assets-guest/img/logo/loder.png') }}"
+                        alt="FM Barbershop">
                 </div>
             </div>
         </div>
@@ -46,7 +49,8 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2 col-md-1">
                             <div class="logo">
-                                <a href="{{ route('guest.home') }}"><img class="fm-logo-header" src="{{ asset('assets-guest/img/logo/logo.png') }}" alt="FM Barbershop"></a>
+                                <a href="{{ route('guest.home') }}"><img class="fm-logo-header"
+                                        src="{{ asset('assets-guest/img/logo/logo.png') }}" alt="FM Barbershop"></a>
                             </div>
                         </div>
                         <div class="col-xl-10 col-lg-10 col-md-10">
@@ -62,7 +66,8 @@
                                             <li><a href="{{ route('guest.blog') }}">Blog</a>
                                                 <ul class="submenu">
                                                     <li><a href="{{ route('guest.blog') }}">Blog</a></li>
-                                                    <li><a href="{{ route('guest.blog-details') }}">Blog Details</a></li>
+                                                    <li><a href="{{ route('guest.blog-details') }}">Blog Details</a>
+                                                    </li>
                                                     <li><a href="{{ route('guest.elements') }}">Element</a></li>
                                                 </ul>
                                             </li>
@@ -71,10 +76,11 @@
                                     </nav>
                                 </div>
                                 <div class="header-right-btn f-right d-none d-lg-block ml-30">
-                                    <a href="{{ route('guest.contact') }}" class="btn header-btn">Book an Appointment</a>
+                                    <a href="{{ route('guest.contact') }}" class="btn header-btn">Book an
+                                        Appointment</a>
                                 </div>
                             </div>
-                        </div>   
+                        </div>
                         <!-- Mobile Menu -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
@@ -109,78 +115,56 @@
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle text-center mb-90">
                             <span>Professional Services</span>
-                            <h2>Our Best services that  we offering to you</h2>
+                            <h2>Our Best services that we offering to you</h2>
                         </div>
                     </div>
                 </div>
+
                 <!-- Section caption -->
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="services-caption text-center mb-30">
-                            <div class="service-icon">
-                                <i class="flaticon-healthcare-and-medical"></i>
-                            </div> 
-                            <div class="service-cap">
-                                <h4><a href="#">Stylish Hair Cut</a></h4>
-                                <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
+
+                    @forelse ($dataLayanan as $item)
+
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="services-caption text-center mb-30">
+
+                                <div class="service-icon">
+                                    <i class="flaticon-healthcare-and-medical"></i>
+                                </div>
+
+                                <div class="service-cap">
+                                    <span class="eyebrow">
+                                        {{ $item->nama_kategori ?? 'Layanan' }}
+                                    </span>
+
+                                    <h4>
+                                        {{ $item->nama_layanan }}
+                                    </h4>
+
+                                    <p>
+                                        {{ $item->deskripsi ?? 'Layanan profesional FM Barbershop.' }}
+                                    </p>
+
+                                    <p>
+                                        Durasi: {{ $item->durasi_menit }} menit
+                                    </p>
+
+                                    <h5>
+                                        Rp {{ number_format((float) $item->harga, 0, ',', '.') }}
+                                    </h5>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="services-caption active text-center mb-30">
-                            <div class="service-icon">
-                                <i class="flaticon-fitness"></i>
-                            </div> 
-                            <div class="service-cap">
-                                <h4><a href="#">Body Massege</a></h4>
-                                <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
-                            </div>
+
+                    @empty
+
+                        <div class="col-12 text-center">
+                            <p>Belum ada layanan yang tersedia saat ini.</p>
                         </div>
-                    </div> 
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="services-caption text-center mb-30">
-                            <div class="service-icon">
-                                <i class="flaticon-clock"></i>
-                            </div> 
-                            <div class="service-cap">
-                                <h4><a href="#">Breard Style</a></h4>
-                                <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="services-caption active text-center mb-30">
-                            <div class="service-icon">
-                                <i class="flaticon-fitness"></i>
-                            </div> 
-                            <div class="service-cap">
-                                <h4><a href="#">Body Massege</a></h4>
-                                <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="services-caption text-center mb-30">
-                            <div class="service-icon">
-                                <i class="flaticon-clock"></i>
-                            </div> 
-                            <div class="service-cap">
-                                <h4><a href="#">Breard Style</a></h4>
-                                <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="services-caption text-center mb-30">
-                            <div class="service-icon">
-                                <i class="flaticon-healthcare-and-medical"></i>
-                            </div> 
-                            <div class="service-cap">
-                                <h4><a href="#">Stylish Hair Cut</a></h4>
-                                <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
-                            </div>
-                        </div>
-                    </div>
+
+                    @endforelse
+
                 </div>
             </div>
         </section>
@@ -196,7 +180,9 @@
                             <div class="single-footer-caption mb-50">
                                 <!-- logo -->
                                 <div class="footer-logo">
-                                    <a href="{{ route('guest.home') }}"><img class="fm-logo-footer" src="{{ asset('assets-guest/img/logo/logo2_footer.png') }}" alt="FM Barbershop"></a>
+                                    <a href="{{ route('guest.home') }}"><img class="fm-logo-footer"
+                                            src="{{ asset('assets-guest/img/logo/logo2_footer.png') }}"
+                                            alt="FM Barbershop"></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
@@ -248,10 +234,16 @@
                                 <!-- Form -->
                                 <div class="footer-form">
                                     <div id="mc_embed_signup">
-                                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
-                                            <input type="email" name="EMAIL" id="newsletter-form-email" placeholder=" Email Address " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'">
+                                        <form target="_blank"
+                                            action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                            method="get" class="subscribe_form relative mail_part" novalidate="true">
+                                            <input type="email" name="EMAIL" id="newsletter-form-email"
+                                                placeholder=" Email Address " class="placeholder hide-on-focus"
+                                                onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'Your email address'">
                                             <div class="form-icon">
-                                                <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">Send</button>
+                                                <button type="submit" name="submit" id="newsletter-submit"
+                                                    class="email_icon newsletter-submit button-contactForm">Send</button>
                                             </div>
                                             <div class="mt-10 info"></div>
                                         </form>
@@ -266,8 +258,12 @@
                         <div class="col-xl-9 col-lg-8">
                             <div class="footer-copy-right">
                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                    Copyright &copy;
+                                    <script>document.write(new Date().getFullYear());</script> All rights reserved |
+                                    This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
+                                        href="https://colorlib.com" target="_blank">Colorlib</a>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                </p>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4">
@@ -286,7 +282,7 @@
         <!-- Footer End-->
     </footer>
     <!-- Scroll Up -->
-    <div id="back-top" >
+    <div id="back-top">
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div>
 
@@ -313,7 +309,7 @@
     <!-- Nice-select, sticky -->
     <script src="{{ asset('assets-guest/js/jquery.nice-select.min.js') }}"></script>
     <script src="{{ asset('assets-guest/js/jquery.sticky.js') }}"></script>
-    
+
     <!-- counter , waypoint,Hover Direction -->
     <script src="{{ asset('assets-guest/js/jquery.counterup.min.js') }}"></script>
     <script src="{{ asset('assets-guest/js/waypoints.min.js') }}"></script>
@@ -326,10 +322,11 @@
     <script src="{{ asset('assets-guest/js/jquery.validate.min.js') }}"></script>
     <script src="{{ asset('assets-guest/js/mail-script.js') }}"></script>
     <script src="{{ asset('assets-guest/js/jquery.ajaxchimp.min.js') }}"></script>
-    
-    <!-- Jquery Plugins, main Jquery -->	
+
+    <!-- Jquery Plugins, main Jquery -->
     <script src="{{ asset('assets-guest/js/plugins.js') }}"></script>
     <script src="{{ asset('assets-guest/js/main.js') }}"></script>
-    
-    </body>
+
+</body>
+
 </html>
